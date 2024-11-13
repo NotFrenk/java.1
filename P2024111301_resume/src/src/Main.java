@@ -57,6 +57,35 @@ public class Main {
 		LinkedList<Mammifero> ma = new LinkedList<Mammifero>();
 		ma.addAll(ma);
 		System.out.println(ma);
+
+
+		// Procedura merge, usiamo due liste di interi già ordinate
+        LinkedList<Integer> l1 = new LinkedList<Integer>();
+        LinkedList<Integer> l2 = new LinkedList<Integer>();
+        l1.add(3);
+        l1.add(8);
+        l1.add(11);
+        l2.add(1);
+        l2.add(2);
+        l2.add(3);
+        l2.add(4);
+        l2.add(9);
+        l2.add(12);
+        l2.add(15);
+		LinkedList<Integer> lsorted = MergeLists(l1, l2);
+		private static LinkedList<Integer> MergeLists(LinkedList<Integer> l1, LinkedList<Integer> l2) {
+        //Prima cosa: impariamo a usare gli iteratori!!!
+
+        //Usando un iteratore, stampare una lista
+        Iterator<Integer> it1 = l1.iterator();
+        while (it1.hasNext()) {
+            Integer num = it1.next();
+            System.out.println(num);
+        }
+
+
+        return null;
+    }
 	}
 
 }
